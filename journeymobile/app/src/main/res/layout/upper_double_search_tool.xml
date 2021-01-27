@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:alpha="0.85"
+    android:background="@color/colorUpMap"
+    android:paddingTop="15dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="15dp"
+    android:orientation="horizontal"
+    >
+
+
+        <ImageButton
+            android:id="@+id/back_bt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/left_arrow"
+            android:layout_gravity="top" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/from" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@drawable/line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/shape" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/from_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:hint="Your spot"
+                android:focusableInTouchMode="false"
+                />
+
+            <EditText
+                android:id="@+id/to_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Your destination"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:focusableInTouchMode="false"
+                />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/route_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/pin3x"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom" />
+
+
+
+
+</LinearLayout>

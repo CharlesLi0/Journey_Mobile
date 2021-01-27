@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_car_parking"
+            android:icon="@drawable/nav_car_parking"
+            android:title="@string/nav_car_parking" />
+
+        <item
+            android:id="@+id/nav_facility"
+            android:icon="@drawable/nav_facility"
+            android:title="@string/nav_facility" />
+
+        <item
+            android:id="@+id/nav_attraction_events"
+            android:icon="@drawable/nav_attraction_events"
+            android:title="@string/nav_attraction_events" />
+
+        <item
+            android:id="@+id/nav_daily_plan"
+            android:icon="@drawable/nav_trip_history"
+            android:title="@string/nav_daily_plan" />
+
+    </group>
+
+</menu>

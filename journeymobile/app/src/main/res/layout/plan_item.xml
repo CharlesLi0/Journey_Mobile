@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/plan_item_linearlayout"
+    android:focusable="true"
+    android:clickable="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/delete_plan_item"
+            android:text="x"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.1"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/clock"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="6dp"
+                />
+
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:background="@color/places_autocomplete_error_button"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.9"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/planList_spotTitle_planItem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Start"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:layout_weight="0.4"
+
+                    />
+
+
+
+                <LinearLayout
+                    android:id="@+id/duration_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.01"
+
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textSize="12sp"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        />
+
+                    <EditText
+                        android:id="@+id/duration_ET_planItem"
+                        android:hint="60"
+                        android:gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/quantum_grey50"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mins"
+                        android:textSize="12sp"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/arrivalBox_LinearL_planItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival Time"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp"
+
+                    android:layout_weight="0.2"
+                    />
+
+                <TextView
+                    android:id="@+id/arrivalTime_TV_planItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08 : 30 AM"
+                    android:layout_weight="0.3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDeepBlue"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Departure time"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp"
+
+                    android:layout_weight="0.1"
+                    />
+
+                <TextView
+                    android:id="@+id/departureTime_TV_planItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09 : 30 AM"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDeepBlue"
+                    android:layout_weight="0.15"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Travel time"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="12sp"
+                    android:layout_weight="0.1"
+                    />
+
+                <TextView
+                    android:id="@+id/travelTime_TV_planItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="10 mins"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDeepBlue"
+                    android:layout_weight="0.2"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

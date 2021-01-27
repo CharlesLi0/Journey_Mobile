@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:elevation="3dp"
+    android:background="@drawable/homepage_fragment_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homepage_event_lastDay"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/home_left_arrow" />
+
+        <TextView
+            android:id="@+id/homepage_event_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorDeepBlue"
+            android:hint="23rd August Friday"/>
+
+        <Button
+            android:id="@+id/homepageEvent_nextDay"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/home_right_arrow"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/homepage_eventList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

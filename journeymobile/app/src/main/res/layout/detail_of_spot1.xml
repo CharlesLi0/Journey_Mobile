@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#045684"
+    >
+    
+    <Button
+        android:id="@+id/popup_add_BT"
+        android:layout_gravity="end"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="add"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:layout_marginEnd="5dp"
+        android:background="#EA837F"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/popup_image"
+            android:background="@drawable/from"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/popup_title_TV"
+                android:text="Title"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/popuip_descrition_TV"
+                android:text="descrtion"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

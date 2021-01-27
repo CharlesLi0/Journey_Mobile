@@ -1,0 +1,41 @@
+<resources>
+
+
+    <!--The name of this app-->
+    <string name="app_name">journey-mobile</string>
+
+    <!--Google API Key Value-->
+    <string name="google_api_key">AIzaSyCf5OjL1tYAZ27t0g-kxBq2hHVCn3UzQA8</string>
+    <string name="google_api_key_direction">AIzaSyCzLyVJqUNA1EhBE0wlzWxxG3jc2902u6M</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- Homepage button -->
+    <string name="toMap_button">Go to Map</string>
+
+    <!-- Homepage Welcome Text -->
+    <string name="welcome_text">Welcome To Rye \nPlan Your Journey</string>
+
+    <!-- Homepage Navigation View Menu Item Title -->
+    <string name="nav_car_parking">Car Parking</string>
+    <string name="nav_facility">Services</string>
+    <string name="nav_attraction_events">Attraction &amp; Events</string>
+    <string name="nav_trip_history">Trip History</string>
+    <string name="nav_daily_plan">Daily Plan</string>
+
+    <!-- Homepage date & time chosen Fragment view items -->
+    <string name="departure_date_text">Departure Date</string>
+    <string name="departure_time_text">Departure Time</string>
+
+</resources>

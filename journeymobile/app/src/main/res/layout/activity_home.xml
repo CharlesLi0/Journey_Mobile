@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homepage_drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/homepage_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/homepage_nav_button"
+                android:layout_height="38dp"
+                android:layout_width="50dp"
+                android:background="@drawable/homepage_nav_button"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/homepage_welcome_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_text"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/homepage_nav_button"
+                android:layout_marginStart="40dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <fragment
+                android:id="@+id/homepage_date_chosen_fragment"
+                android:name="com.example.journeyMobile.view.fragment.HomepageDateChosenFragment"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <FrameLayout
+                android:id="@+id/homepage_event_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <fragment
+                android:id="@+id/homepage_weather_fragment"
+                android:name="com.example.journeyMobile.view.fragment.HomepageWeatherFragment"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"/>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/homepage_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/colorWhite"
+            android:elevation="10dp"
+            android:src="@drawable/homepage_fab" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/homepage_nav_menu"
+        app:headerLayout="@layout/homepage_nav_header" />
+
+
+</android.support.v4.widget.DrawerLayout>

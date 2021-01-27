@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homepage_fragment_bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/departure_date_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/departure_date_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/departure_time_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/departure_time_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="showDatePickerDialog" >
+
+            <TextView
+                android:id="@+id/day_of_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorDeepBlue"
+                android:textSize="24sp"
+                android:text="23" />
+
+            <View
+                android:id="@+id/separator_line"
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="@color/colorDeepBlue"
+                android:layout_toEndOf="@id/day_of_month_text"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/day_of_month_text"
+                android:layout_toEndOf="@id/separator_line"
+                android:textColor="@color/colorDeepBlue"
+                android:textSize="12sp"
+                android:text="Aug" />
+
+            <TextView
+                android:id="@+id/week_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/month_text"
+                android:layout_below="@id/month_text"
+                android:textColor="@color/colorDeepBlue"
+                android:textSize="12sp"
+                android:text="Friday" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hour_minute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorDeepBlue"
+            android:textSize="24sp"
+            android:text="08:30 AM"
+            android:onClick="showTimePickerDialog" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
